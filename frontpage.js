@@ -112,7 +112,7 @@ function numberToPicture(number, id, randomNumber) {
             if (randomNumber===0){
                 document.getElementById(id).src='images/Four.png';
             }else{
-                document.getElementById(id).src='images/Four2.jpg';
+                document.getElementById(id).src='images/Four2.png';
             }
             break;
         case 5:
