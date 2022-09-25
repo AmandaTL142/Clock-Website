@@ -45,7 +45,7 @@ var randomNumber;
 
 var today = new Date();
 
-var hours = today.getHours()
+var hours = 1 //today.getHours()
 if (hours.length === 1){
     randomNumber = Math.floor(Math.random() * 2)
     numberToPicture(0, 1, randomNumber)
@@ -62,7 +62,7 @@ if (hours.length === 1){
     numberToPicture(Number(secondPlace), 2, randomNumber)
 }
 
-var minutes = today.getMinutes()
+var minutes = 4//today.getMinutes()
 if (minutes.length === 1){
     randomNumber = Math.floor(Math.random() * 2)
     numberToPicture(0, 3, randomNumber)
