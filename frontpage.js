@@ -45,7 +45,7 @@ var fourthPlace;
 var today = new Date();
 var hours = today.getHours()
 if (hours.length === 1){
-    document.getElementById(1).src='/Users/amandatolstruplaursen/Clock Website/images/Zero.png';
+    numberToPicture(0, 1)
     secondPlace = hours;
     numberToPicture(secondPlace, 2)
 
@@ -58,7 +58,7 @@ if (hours.length === 1){
 
 var minutes = today.getMinutes()
 if (minutes.length === 1){
-    document.getElementById(3).src='/Users/amandatolstruplaursen/Clock Website/images/Zero.png';
+    numberToPicture(0, 3)
     fourthPlace = minutes;
     numberToPicture(fourthPlace, 4)
 } else {
@@ -71,33 +71,33 @@ if (minutes.length === 1){
 function numberToPicture(number, id) {
     switch (number){
         case 0:
-            document.getElementById(id).src='/Users/amandatolstruplaursen/Clock Website/images/Zero.png';
+            document.getElementById(id).src='/images/Zero.png';
             break;
         case 1:
-            document.getElementById(id).src='/Users/amandatolstruplaursen/Clock Website/images/One.png';
+            document.getElementById(id).src='/images/One.png';
             break;
         case 2:
-            document.getElementById(id).src='/Users/amandatolstruplaursen/Clock Website/images/Two.png';
+            document.getElementById(id).src='/images/Two.png';
             break;
         case 3:
-            document.getElementById(id).src='/Users/amandatolstruplaursen/Clock Website/images/Three.png';
+            document.getElementById(id).src='/images/Three.png';
             break;
         case 4:
-            document.getElementById(id).src='/Users/amandatolstruplaursen/Clock Website/images/Four.png';
+            document.getElementById(id).src='/images/Four.png';
             break;
         case 5:
-            document.getElementById(id).src='/Users/amandatolstruplaursen/Clock Website/images/Five.png';
+            document.getElementById(id).src='/images/Five.png';
             break;
         case 6:
-            document.getElementById(id).src='/Users/amandatolstruplaursen/Clock Website/images/Six.png';
+            document.getElementById(id).src='/images/Six.png';
         case 7:
-            document.getElementById(id).src='/Users/amandatolstruplaursen/Clock Website/images/Seven.png';
+            document.getElementById(id).src='/images/Seven.png';
             break;
         case 8:
-            document.getElementById(id).src='/Users/amandatolstruplaursen/Clock Website/images/Eight.png';
+            document.getElementById(id).src='/images/Eight.png';
             break;
         case 9:
-            document.getElementById(id).src='/Users/amandatolstruplaursen/Clock Website/images/Nine.png';
+            document.getElementById(id).src='/images/Nine.png';
             break;
     }
 }
