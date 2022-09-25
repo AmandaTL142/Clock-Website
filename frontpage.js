@@ -68,8 +68,8 @@ if (minutes.length === 1){
     numberToPicture(fourthPlace, 4)
 }
 
-function numberToPicture(number) {
-    switch (number, id){
+function numberToPicture(number, id) {
+    switch (number){
         case 0:
             document.getElementById(id).src='/Users/amandatolstruplaursen/Clock Website/images/Zero.png';
             break;
