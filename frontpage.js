@@ -1,42 +1,3 @@
-/*
-var today = new Date();
-var minutes = today.getMinutes()
-if (minutes.length === 1){
-    var minutesString = minutes.toString()
-    var minutes = '0' + minutesString
-}
-var time = today.getHours() + ":" + minutes
-
-document.write(time);
-
- */
-/*
-var firstPlace;
-var secondPlace;
-var thirdPlace;
-var fourthPlace;
-
-var today = new Date();
-var hours = today.getHours()
-if (hours.length === 1){
-    firstPlace = 0;
-    secondPlace = hours;
-} else {
-    firstPlace = hours[0]
-    secondPlace = hours[1]
-}
-
-var minutes = today.getMinutes()
-if (minutes.length === 1){
-    thirdPlace = 0;
-    fourthPlace = minutes;
-} else {
-    thirdPlace = minutes[0]
-    fourthPlace = minutes[1]
-}
-
- */
-
 var firstPlace;
 var secondPlace;
 var thirdPlace;
@@ -45,15 +6,20 @@ var randomNumber;
 
 var today = new Date();
 
+//Timer omsættes til billeder
 var hours = today.getHours()
+
+//Hvis timer kun har ét digit, kører denne kode
 if (hours.toString().length === 1){
-    randomNumber = Math.floor(Math.random() * 2)
+    randomNumber = Math.floor(Math.random() * 2)        //Et tal mellem 0 og 1 findes, så ét af to billeder kan vælges tilfældigt
     numberToPicture(0, 1, randomNumber)
     secondPlace = hours;
     randomNumber = Math.floor(Math.random() * 2)
     numberToPicture(secondPlace, 2, randomNumber)
 
-} else {
+}
+//Hvis timer har to digits, kører denne kode
+else {
     firstPlace = String(hours)[0]
     secondPlace = String(hours)[1]
     randomNumber = Math.floor(Math.random() * 2)
@@ -62,14 +28,20 @@ if (hours.toString().length === 1){
     numberToPicture(Number(secondPlace), 2, randomNumber)
 }
 
+
+//Minutter omsættes til billeder
 var minutes = today.getMinutes()
+
+//Hvis timer kun har ét digit, kører denne kode
 if (minutes.toString().length === 1){
     randomNumber = Math.floor(Math.random() * 2)
     numberToPicture(0, 3, randomNumber)
     fourthPlace = minutes;
     randomNumber = Math.floor(Math.random() * 2)
     numberToPicture(fourthPlace, 4, randomNumber)
-} else {
+}
+//Hvis timer har to digits, kører denne kode
+else {
     thirdPlace = String(minutes)[0]
     fourthPlace = String(minutes)[1]
     randomNumber = Math.floor(Math.random() * 2)
@@ -78,6 +50,8 @@ if (minutes.toString().length === 1){
     numberToPicture(Number(fourthPlace), 4, randomNumber)
 }
 
+
+//Denne funktion finder et billede, der passer med det nummer, der inputtes som parameter, og placerer dette billede på HTML-siden baseret på ID. Der vælges mellem to mulige billeder vha. randomNumber.
 function numberToPicture(number, id, randomNumber) {
     switch (number){
         case 0:
