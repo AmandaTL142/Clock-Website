@@ -78,7 +78,7 @@ function numberToPicture(number, id) {
             document.getElementById(id).src='images/One.png';
             break;
         case 2:
-            document.getElementById(id).src='images/Two.jpg';
+            document.getElementById(id).src='../images/Two.jpg';
             break;
         case 3:
             document.getElementById(id).src='images/Three.png';
