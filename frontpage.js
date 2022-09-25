@@ -45,7 +45,7 @@ var randomNumber;
 
 var today = new Date();
 
-var hours = 1 //today.getHours()
+var hours = today.getHours()
 if (hours.toString().length === 1){
     randomNumber = Math.floor(Math.random() * 2)
     numberToPicture(0, 1, randomNumber)
@@ -62,7 +62,7 @@ if (hours.toString().length === 1){
     numberToPicture(Number(secondPlace), 2, randomNumber)
 }
 
-var minutes = 4//today.getMinutes()
+var minutes = today.getMinutes()
 if (minutes.toString().length === 1){
     randomNumber = Math.floor(Math.random() * 2)
     numberToPicture(0, 3, randomNumber)
@@ -109,12 +109,7 @@ function numberToPicture(number, id, randomNumber) {
             }
             break;
         case 4:
-            if (randomNumber===0){
-                document.getElementById(id).src='images/Four.png';
-            }else{
-                ocument.getElementById(id).src='images/Four2.jpg';
-            }
-            break;
+            document.getElementById(id).src='images/Four.png';
         case 5:
             if (randomNumber===0){
                 document.getElementById(id).src='images/Five.jpg';
