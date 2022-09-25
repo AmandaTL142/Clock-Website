@@ -44,29 +44,30 @@ var thirdPlace;
 var fourthPlace;
 
 var today = new Date();
+
 var hours = today.getHours()
 if (hours.length === 1){
     numberToPicture(0, 1)
     secondPlace = hours;
-    numberToPicture(secondPlace, 2)
+    numberToPicture(Number(secondPlace), 2)
 
 } else {
-    firstPlace = hours[0]
-    secondPlace = hours[1]
-    numberToPicture(firstPlace, 1)
-    numberToPicture(secondPlace, 2)
+    firstPlace = String(hours)[0]
+    secondPlace = String(hours)[1]
+    numberToPicture(Number(firstPlace), 1)
+    numberToPicture(Number(secondPlace), 2)
 }
 
 var minutes = today.getMinutes()
 if (minutes.length === 1){
     numberToPicture(0, 3)
     fourthPlace = minutes;
-    numberToPicture(fourthPlace, 4)
+    numberToPicture(Number(fourthPlace), 4)
 } else {
-    thirdPlace = minutes[0]
-    fourthPlace = minutes[1]
-    numberToPicture(thirdPlace, 3)
-    numberToPicture(fourthPlace, 4)
+    thirdPlace = String(minutes)[0]
+    fourthPlace = String(minutes)[1]
+    numberToPicture(Number(thirdPlace), 3)
+    numberToPicture(Number(fourthPlace), 4)
 }
 
 function numberToPicture(number, id) {
