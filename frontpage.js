@@ -109,7 +109,12 @@ function numberToPicture(number, id, randomNumber) {
             }
             break;
         case 4:
-            document.getElementById(id).src='images/Four.png';
+            if (randomNumber===0){
+                document.getElementById(id).src='images/Four.png';
+            }else{
+                document.getElementById(id).src='images/Four2.jpg';
+            }
+            break;
         case 5:
             if (randomNumber===0){
                 document.getElementById(id).src='images/Five.jpg';
