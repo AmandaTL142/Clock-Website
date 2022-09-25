@@ -45,83 +45,60 @@ var fourthPlace;
 var today = new Date();
 var hours = today.getHours()
 if (hours.length === 1){
-    display_image('/Users/amandatolstruplaursen/Clock Website/images/Zero.png',
-        276,
-        110);
+    document.getElementById(1).src='/Users/amandatolstruplaursen/Clock Website/images/Zero.png';
     secondPlace = hours;
-    numberToPicture(secondPlace)
+    numberToPicture(secondPlace, 2)
 
 } else {
     firstPlace = hours[0]
     secondPlace = hours[1]
-    numberToPicture(firstPlace)
-    numberToPicture(secondPlace)
+    numberToPicture(firstPlace, 1)
+    numberToPicture(secondPlace, 2)
 }
 
 var minutes = today.getMinutes()
 if (minutes.length === 1){
-    display_image('/Users/amandatolstruplaursen/Clock Website/images/Zero.png',
-        276,
-        110);
+    document.getElementById(3).src='/Users/amandatolstruplaursen/Clock Website/images/Zero.png';
     fourthPlace = minutes;
-    numberToPicture(fourthPlace)
+    numberToPicture(fourthPlace, 4)
 } else {
     thirdPlace = minutes[0]
     fourthPlace = minutes[1]
-    numberToPicture(thirdPlace)
-    numberToPicture(fourthPlace)
+    numberToPicture(thirdPlace, 3)
+    numberToPicture(fourthPlace, 4)
 }
 
 function numberToPicture(number) {
-    switch (number){
+    switch (number, id){
         case 0:
-            display_image('/Users/amandatolstruplaursen/Clock Website/images/Zero.png',
-                276,
-                110);;
+            document.getElementById(id).src='/Users/amandatolstruplaursen/Clock Website/images/Zero.png';
             break;
         case 1:
-            display_image('/Users/amandatolstruplaursen/Clock Website/images/One.png',
-                276,
-                110);;
+            document.getElementById(id).src='/Users/amandatolstruplaursen/Clock Website/images/One.png';
             break;
         case 2:
-            display_image('/Users/amandatolstruplaursen/Clock Website/images/Two.png',
-                276,
-                110);
+            document.getElementById(id).src='/Users/amandatolstruplaursen/Clock Website/images/Two.png';
             break;
         case 3:
-            display_image('/Users/amandatolstruplaursen/Clock Website/images/Three.png',
-                276,
-                110);
+            document.getElementById(id).src='/Users/amandatolstruplaursen/Clock Website/images/Three.png';
             break;
         case 4:
-            display_image('/Users/amandatolstruplaursen/Clock Website/images/Four.png',
-                276,
-                110);
+            document.getElementById(id).src='/Users/amandatolstruplaursen/Clock Website/images/Four.png';
             break;
         case 5:
-            display_image('/Users/amandatolstruplaursen/Clock Website/images/Five.png',
-                276,
-                110);
+            document.getElementById(id).src='/Users/amandatolstruplaursen/Clock Website/images/Five.png';
             break;
         case 6:
-            display_image('/Users/amandatolstruplaursen/Clock Website/images/Six.png',
-                276,
-                110);
+            document.getElementById(id).src='/Users/amandatolstruplaursen/Clock Website/images/Six.png';
         case 7:
-            display_image('/Users/amandatolstruplaursen/Clock Website/images/Seven.png',
-                276,
-                110);
+            document.getElementById(id).src='/Users/amandatolstruplaursen/Clock Website/images/Seven.png';
             break;
         case 8:
-            display_image('/Users/amandatolstruplaursen/Clock Website/images/Eight.png',
-                276,
-                110);
+            document.getElementById(id).src='/Users/amandatolstruplaursen/Clock Website/images/Eight.png';
             break;
         case 9:
-            display_image('/Users/amandatolstruplaursen/Clock Website/images/Nine.png',
-                276,
-                110);
+            document.getElementById(id).src='/Users/amandatolstruplaursen/Clock Website/images/Nine.png';
+            break;
     }
 }
 
