@@ -46,12 +46,12 @@ var randomNumber;
 var today = new Date();
 
 var hours = 1 //today.getHours()
-if (hours.length === 1){
+if (hours.toString().length === 1){
     randomNumber = Math.floor(Math.random() * 2)
     numberToPicture(0, 1, randomNumber)
     secondPlace = hours;
     randomNumber = Math.floor(Math.random() * 2)
-    numberToPicture(Number(secondPlace), 2, randomNumber)
+    numberToPicture(secondPlace, 2, randomNumber)
 
 } else {
     firstPlace = String(hours)[0]
@@ -63,12 +63,12 @@ if (hours.length === 1){
 }
 
 var minutes = 4//today.getMinutes()
-if (minutes.length === 1){
+if (minutes.toString().length === 1){
     randomNumber = Math.floor(Math.random() * 2)
     numberToPicture(0, 3, randomNumber)
     fourthPlace = minutes;
     randomNumber = Math.floor(Math.random() * 2)
-    numberToPicture(Number(fourthPlace), 4, randomNumber)
+    numberToPicture(fourthPlace, 4, randomNumber)
 } else {
     thirdPlace = String(minutes)[0]
     fourthPlace = String(minutes)[1]
