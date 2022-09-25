@@ -105,7 +105,7 @@ function numberToPicture(number, id, randomNumber) {
             if (randomNumber===0){
                 document.getElementById(id).src='images/Three.png';
             }else{
-                document.getElementById(id).src='images/Three2.jpg';
+                document.getElementById(id).src='images/Three2.png';
             }
             break;
         case 4:
