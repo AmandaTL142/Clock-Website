@@ -74,30 +74,30 @@ function numberToPicture(number, id) {
             document.getElementById(id).src='/images/Zero.png';
             break;
         case 1:
-            document.getElementById(id).src='/images/One.png';
+            document.getElementById(id).src='images/One.png';
             break;
         case 2:
-            document.getElementById(id).src='/images/Two.png';
+            document.getElementById(id).src='images/Two.jpg';
             break;
         case 3:
-            document.getElementById(id).src='/images/Three.png';
+            document.getElementById(id).src='images/Three.png';
             break;
         case 4:
-            document.getElementById(id).src='/images/Four.png';
+            document.getElementById(id).src='images/Four.png';
             break;
         case 5:
-            document.getElementById(id).src='/images/Five.png';
+            document.getElementById(id).src='images/Five.jpg';
             break;
         case 6:
-            document.getElementById(id).src='/images/Six.png';
+            document.getElementById(id).src='images/Six.jpg';
         case 7:
-            document.getElementById(id).src='/images/Seven.png';
+            document.getElementById(id).src='images/Seven2.jpg';
             break;
         case 8:
-            document.getElementById(id).src='/images/Eight.png';
+            document.getElementById(id).src='images/Eight.png';
             break;
         case 9:
-            document.getElementById(id).src='/images/Nine.png';
+            document.getElementById(id).src='images/Nine2.png';
             break;
     }
 }
